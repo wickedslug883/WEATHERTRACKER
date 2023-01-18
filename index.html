@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+  
+    <header class="bg-dark"> 
+        <h1 class="p-2 text-light text-center">Weather Dashboard</h1>
+    </header>
+
+    <div class="m-4 p-4">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Search for a City:</h2>
+                    <form class="form-inline" id="searchMain">
+                        <input type="search" class="form-control mb-3 ds-input" id="cityName" placeholder="Enter Any City..." style="width: 100%;">
+                        <button type="submit" class="btn btn-primary mb-3" style="width: 100%;"><span style="text-align:center;"> Search </span></button>
+                    </form>
+                    <hr>
+                    <ul class="list-group" id="searchHistory">
+                    </ul>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div class="d-flex flex-row ">
+                                <h2 class="card-title align-self-center" id="headCity"></h2> 
+                            </div>
+                            <h5 class="card-subtitle " id="headTemp">Temperature: </h5>
+                            <h5 class="card-subtitle mt-3 " id="headHum">Humidity: </h5>
+                            <h5 class="card-subtitle mt-3 " id="headWind">Wind Speed: </h5>
+                            <h5 class="card-subtitle mt-3 " id="headUV">UV Index: <span id="UVec" class="px-2 py-1 mb-1 text-light rounded font-weight-normal"></span></h5>
+                        </div>  
+                    </div>
+                    
+                    <div>
+                        <h3 class="card-title mt-3">5-Day Forecast:</h3>
+                        <div class="row justify-content-between" id="fiveDayData">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/dayjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+        

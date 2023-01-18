@@ -1,0 +1,45 @@
+header {
+    background: rgb(70,90,184);
+    background: linear-gradient(90deg, rgba(70,90,184,1) 0%, rgba(38,19,96,1) 94%);
+}
+h1 {
+    font-weight: 750;
+    position: relative;
+   right: 20;
+}
+h2 {
+    font-weight: 700;
+}
+.bg-danger {
+    padding: .5rem;
+    background-color: #323D4F !important;
+}
+.pt-3, .py-3 {
+    padding-top: 0 !important;
+}
+.text-muted {
+    color: black !important;
+}
+
+.list-group-item {
+    background-color: #AEAEAE !important;
+    margin-bottom: 15px;
+}
+.list-group-item-action {
+    color: black;
+    text-align: center;
+    font-weight: 500;
+}
+.card-body {
+    padding: .5rem !important;
+}
+.p-4 {
+    padding: 0 !important;
+}
+.m-4 {
+    padding: 0 !important;
+}
+.form-inline {
+    flex-flow: column !important;
+    width: auto !important;
+}
